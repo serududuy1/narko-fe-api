@@ -62,9 +62,7 @@ const Profile = () => {
           <div className="csx">
             <div className="profile-pict">
               <img
-                src={
-                  "http://https://narko-be-production.up.railway.app//" + ssdd
-                }
+                src={"http://narko-be-production.up.railway.app//" + ssdd}
                 alt="Profile"
               />
               <p>{users?.username}</p>

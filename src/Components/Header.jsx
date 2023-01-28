@@ -81,9 +81,7 @@ const Header = () => {
               </Link>
               <Link className="icon account" to="/profile">
                 <img
-                  src={
-                    "http://https://narko-be-production.up.railway.app//" + ssdd
-                  }
+                  src={"http://narko-be-production.up.railway.app//" + ssdd}
                 />
                 <p className="btn-login">{users?.username}</p>
               </Link>

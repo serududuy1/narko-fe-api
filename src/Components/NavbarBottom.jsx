@@ -30,11 +30,7 @@ const NavbarBottom = () => {
             </Link>
             <div className="hcLine"></div>
             <Link to="/profile" className="hcb hcbProfile">
-              <img
-                src={
-                  "http://https://narko-be-production.up.railway.app//" + ssdd
-                }
-              />
+              <img src={"http://narko-be-production.up.railway.app//" + ssdd} />
             </Link>
           </div>
         </div>
