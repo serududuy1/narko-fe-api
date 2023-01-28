@@ -1,0 +1,408 @@
+@media only screen and (min-width: 568px) {
+    .psContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        gap: 3vh;
+
+        .psTitle {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            h1 {
+                color: var(--white);
+                font-size: 3rem;
+            }   
+            
+            .linePost {
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0), #FFF, rgba(255, 255, 255, 0));
+            }
+        }
+    
+        form {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+    
+            .psProductInfo {
+                width: 100%;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                gap: 20px;
+    
+                .piTitle {
+                    width: 100%;
+                    background-color: var(--pink);
+                    padding: 5px 20px;
+                    color: var(--white);
+                }
+    
+                .piFoto {
+                    width: 80%;
+                    display: flex;
+    
+                    .div {
+                        width: 150px;
+                        height: 150px;
+                        // background-color: red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        .file {
+                            // background-color: blue;
+                            border: 2px dashed var(--pink);
+                            padding: 50%;
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: var(--pink);
+                            cursor: pointer;
+                            transition: all .2s;
+                                
+                            input {
+                                display: none;
+                            }
+    
+                            span {
+                                position: absolute;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                font-weight: bold;
+    
+                                i {
+                                    font-size: 2rem;
+                                }
+                            }
+    
+                            &:hover {
+                                background-color: rgba(128, 128, 128, 0.3);
+    
+                            }
+                        }
+                    }
+    
+                    .dov {
+                        margin-left: 10px;
+                        font-size: .8rem;
+                        font-style: italic;
+                        font-weight: bold;
+                        opacity: .5;
+                    }
+                }
+    
+                .piProductInfo {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+    
+                    label {
+                        margin-left: 10px;
+                    }
+    
+                    input {
+                        height: 40px;
+                        padding: 10px;
+                        font-size: 1rem;
+                        font-family: 'Numans';
+                    }
+    
+                    textarea {
+                        height: 120px;
+                        padding: 10px;
+                        font-size: 1rem;
+                        font-family: 'Numans';
+                    }
+                }
+            }
+    
+            .psSellingInfo {
+                width: 100%;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                gap: 20px;
+    
+                .siTitle {
+                    width: 100%;
+                    background-color: var(--pink);
+                    padding: 5px 20px;
+                    color: var(--white);
+                }
+    
+                .siInformation {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+    
+                    label {
+                        margin-left: 10px;
+                    }
+    
+                    .priceInfo {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+    
+                        span {
+                            width: 5%;
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                            // background-color: blue;
+                        }
+    
+                        input {
+                            width: 95%;
+                        }
+                    }
+    
+                    input {
+                        height: 40px;
+                        padding: 10px;
+                        font-size: 1rem;
+                        font-family: 'Numans';
+                    }
+                }
+            }
+
+            .btnPS {
+                width: 100%;
+                justify-content: flex-end;
+                display: flex;
+
+                button {
+                    align-self: flex-end;
+                    width: 300px;
+                    height: 40px;
+                    background-color: var(--black);
+                    border: none;
+                    color: var(--white);
+                    font-family: 'Poppins';
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+        
+                    &:hover {
+                        background-color: var(--pink);
+                        filter: drop-shadow(0 0 2px var(--black));
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .psContainer {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .psProductInfo {
+                width: 90%;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+    
+                .piTitle {
+                    width: 100%;
+                    font-size: .7rem;
+                    background-color: var(--pink);
+                    padding: 5px 20px;
+                    color: var(--white);
+                }
+    
+                .piFoto {
+                    width: 90%;
+                    display: flex;
+                    gap: 10px;
+    
+                    .div {
+                        width: 100px;
+                        height: 100px;
+                        // background-color: red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        .file {
+                            // background-color: blue;
+                            border: 2px dashed var(--pink);
+                            padding: 50%;
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: var(--pink);
+                            cursor: pointer;
+                            transition: all .2s;
+                                
+                            input {
+                                display: none;
+                            }
+    
+                            span {
+                                position: absolute;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                font-weight: bold;
+                                font-size: 1rem;
+                                text-align: center;
+    
+                                i {
+                                    font-size: 1.5rem;
+                                }
+                            }
+    
+                            &:hover {
+                                background-color: rgba(128, 128, 128, 0.3);
+    
+                            }
+                        }
+                    }
+    
+                    .dov {
+                        font-size: .7rem;
+                        font-style: italic;
+                        font-weight: bold;
+                        opacity: .5;
+                    }
+                }
+    
+                .piProductInfo {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+    
+                    label {
+                        margin-left: 10px;
+                    }
+    
+                    input {
+                        height: 30px;
+                        padding: 5px;
+                        font-size: 1rem;
+                        font-family: 'Numans';
+                    }
+    
+                    textarea {
+                        height: 100px;
+                        padding: 5px;
+                        font-size: 1rem;
+                        font-family: 'Numans';
+                    }
+                }
+            }
+
+            .psSellingInfo {
+                width: 90%;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+    
+                .siTitle {
+                    width: 100%;
+                    background-color: var(--pink);
+                    padding: 5px 20px;
+                    color: var(--white);
+                    font-size: .7rem;
+                }
+    
+                .siInformation {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+    
+                    label {
+                        margin-left: 10px;
+                    }
+    
+                    .priceInfo {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        span {
+                            width: 10%;
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                            // background-color: blue;
+                        }
+    
+                        input {
+                            width: 85%;
+                            height: 30px;
+                            padding: 5px;
+                        }
+                    }
+    
+                    input {
+                        height: 30px;
+                        padding: 5px;
+                        font-size: 1rem;
+                        font-family: 'Numans';
+                    }
+                }
+            }
+
+            .btnPS {
+                width: 90%;
+                display: flex;
+                justify-content: flex-end;
+
+                button {
+                    padding: 5px 20px;
+                    align-self: flex-end;
+                    background-color: var(--black);
+                    border: none;
+                    color: var(--white);
+                    font-family: 'Poppins';
+                    font-weight: bold;
+                    font-size: .9rem;
+                    cursor: pointer;
+                    transition: all .2s;
+        
+                    &:hover {
+                        background-color: var(--pink);
+                        filter: drop-shadow(0 0 2px var(--black));
+                    }
+                }
+            }
+        }
+    }
+}

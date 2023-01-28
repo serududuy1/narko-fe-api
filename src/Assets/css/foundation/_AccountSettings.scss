@@ -1,0 +1,354 @@
+@media only screen and (min-width: 568px) {
+    .menuSec {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        gap: 20px;
+    
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        form {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+    
+            .name {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+    
+                .named {
+                    width: 49%;
+                }
+            }
+    
+            .gender {
+                display: flex;
+                align-items: center;
+
+                .genderFlex {
+                    display: flex;
+                }
+    
+                .radio-container {
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-size: 1.5rem;
+                    user-select: none;
+                    height: 40px;
+                    margin-right: 20px;
+    
+                    &:hover .radio ~ .checkmark {
+                        background-color: var(--white);
+                        color: var(--black);
+                    }
+    
+                    .radio {
+                        opacity: 0;
+                        width: 15px;
+                        cursor: pointer;
+                        position: absolute;
+    
+                        &:checked ~ .checkmark {
+                            background-color: var(--red);
+                            color: var(--white);
+                        }
+                    }
+    
+                    .checkmark {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                        background-color: #eee;
+                        color: #aaa;
+                        border-radius: 10px;
+                        height: 40px;
+                        width: 120px;
+                    }
+                }
+    
+                p {
+                    font-style: italic;
+                    color: var(--black);
+                }
+            }
+    
+            .chsimg {
+                display: flex;
+                flex-direction: column;
+    
+                .img-container {
+                    display: flex;
+                    cursor: pointer;
+                    font-size: 1.5rem;
+                    user-select: none;
+                    height: 40px;
+                    width: 20%;
+                    
+                    .flimg {
+                        opacity: 0;
+                        width: 15px;
+                        cursor: pointer;
+                        position: absolute;
+                    }
+    
+                }
+                
+                .choose {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 20px;
+                    background-color: #eee;
+                    color: #aaa;
+                    border-radius: 10px;
+                    height: 40px;
+                    width: 100%;
+
+                    &:hover {
+                        background-color: var(--red);
+                        color: var(--white);
+                    }
+
+                    &:active {
+                        background-color: var(--black);
+                        color: var(--white);
+                    }
+                }
+                
+                p {
+                    font-size: .8rem;
+                    text-align: left;
+                }
+            }
+    
+            label {
+                text-align: left;
+            }
+    
+            h3 {
+                margin-left: 20px;
+            }
+        
+            input {
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                font-size: 1rem;
+                font-family: 'Numans';
+                transition: all .3s;
+                border-radius: 5px;
+                border: none;
+    
+                &:focus {
+                    filter: drop-shadow(0 0 2px var(--black));
+                }    
+            }
+    
+            button {
+                margin-top: 50px;
+                align-self: center;
+                width: 50%;
+                height: 50px;
+                font-size: 1rem;
+                font-weight: bold;
+                background-color: var(--black);
+                border-radius: 10px;
+                border: none;
+                color: var(--white);
+                cursor: pointer;
+                transition: all .3s;
+    
+                &:hover {
+                    background-color: var(--pink);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .menuSec {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        gap: 20px;
+    
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+
+            label {
+                text-align: left;
+                font-size: .9rem;
+            }
+    
+            h3 {
+                margin-left: 20px;
+            }
+        
+            input {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: 1rem;
+                font-family: 'Numans';
+                transition: all .3s;
+                border-radius: 5px;
+                border: none;
+    
+                &:focus {
+                    filter: drop-shadow(0 0 2px var(--black));
+                }    
+            }
+    
+            .gender {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+
+                .genderFlex {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                }
+    
+                .radio-container {
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    user-select: none;
+                    width: 100%;
+    
+                    &:hover .radio ~ .checkmark {
+                        background-color: var(--white);
+                        color: var(--black);
+                    }
+    
+                    .radio {
+                        opacity: 0;
+                        width: 15px;
+                        cursor: pointer;
+                        position: absolute;
+    
+                        &:checked ~ .checkmark {
+                            background-color: var(--red);
+                            color: var(--white);
+                        }
+                    }
+    
+                    .checkmark {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #eee;
+                        color: #aaa;
+                        border-radius: 10px;
+                        width: 100%;
+                    }
+                }
+    
+                p {
+                    font-size: .7rem;
+                    font-style: italic;
+                    color: var(--black);
+                }
+            }
+    
+            .chsimg {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+    
+                .img-container {
+                    display: flex;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    user-select: none;
+                    width: 100%;
+                    justify-content: center;
+                    
+                    .flimg {
+                        opacity: 0;
+                        width: 15px;
+                        cursor: pointer;
+                        position: absolute;
+                    }
+    
+                }
+                
+                .choose {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    align-items: center;
+                    background-color: #eee;
+                    color: #aaa;
+                    border-radius: 10px;
+                    width: 50%;
+                    font-size: 1rem;
+                    padding: 5px;
+
+                    &:hover {
+                        background-color: var(--red);
+                        color: var(--white);
+                    }
+
+                    &:active {
+                        background-color: var(--black);
+                        color: var(--white);
+                    }
+                }
+
+                p {
+                    font-size: .7rem;
+                    font-style: italic;
+                    color: var(--black);
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                align-self: center;
+                width: 50%;
+                padding: 10px;
+                font-size: .8rem;
+                font-weight: bold;
+                background-color: var(--black);
+                border-radius: 10px;
+                border: none;
+                color: var(--white);
+                cursor: pointer;
+                transition: all .3s;
+    
+                &:hover {
+                    background-color: var(--pink);
+                }
+            }
+        }
+    }
+}

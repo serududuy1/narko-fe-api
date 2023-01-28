@@ -1,0 +1,45 @@
+.hContentBottom {
+    width: 100%;
+    background-color: var(--white);
+    filter: drop-shadow(0 0 5px var(--grey));
+    
+    .hcContent {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+
+        .hcLine {
+            height: 100%;
+            width: 1px;
+            // background: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--grey), rgba(255, 255, 255, 0));
+            background-color: var(--red);
+            opacity: .5;
+            filter: blur(1px);
+        }
+
+        .hcb {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--pink);
+            padding: 5px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                background-color: var(--grey);
+            }
+
+            &:hover {
+                height: 100%;
+                background: linear-gradient(180deg, rgb(194, 194, 194), var(--white));
+            }
+        }
+    }
+}

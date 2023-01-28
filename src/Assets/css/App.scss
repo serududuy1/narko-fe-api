@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Numans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "./foundation/Header.scss";
+@import "./foundation/HeaderSeller.scss";
+@import "./foundation/NavbarBottom.scss";
+@import "./foundation/Footer.scss";
+@import "./foundation/Loading.scss";
+@import "./foundation/Slider.scss";
+@import "./foundation/Category.scss";
+@import "./foundation/Login.scss";
+@import "./foundation/Register.scss";
+@import "./foundation/Profile.scss";
+@import "./foundation/AccountSettings.scss";
+@import "./foundation/Riwayat.scss";
+@import "./foundation/Card.scss";
+@import "./foundation/Product.scss";
+@import "./foundation/PostSeller.scss";
+@import "./foundation/SellerProfile.scss";
+@import "./foundation/SellerPage.scss";
+@import "./foundation/Cart.scss";
+@import "./foundation/Wishlist.scss";
+@import "./foundation/Checkout.scss";
+@import "./foundation/DetailProduk.scss";
+@import "./foundation/Topup.scss";
+@import "./foundation/NotFound.scss";
+
+:root {
+  --red: #d90429;
+  --pink: #ef233c;
+  --white: #edf2f4;
+  --grey: #8d99ae;
+  --black: #2b2d42;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #edf2f4;
+}

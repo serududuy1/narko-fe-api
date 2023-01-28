@@ -1,0 +1,472 @@
+@media only screen and (min-width: 568px) {
+    .coContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        margin: 50px 0;
+    
+        .coTitle {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            h1 {
+                color: var(--white);
+                font-size: 3rem;
+            }
+    
+            .lineCheck {
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--white), rgba(255, 255, 255, 0));
+            }
+        }
+    
+        .coSection {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+    
+            .coAddress {
+                width: 100%;
+                background-color: var(--white);
+                padding: 20px;
+    
+                .addTitle {
+                    width: 100%;
+                    color: var(--red);
+                    margin-bottom: 10px;
+                    display: flex;
+                }
+    
+                .addInfo {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+    
+                    .ussrName {
+                        width: 20%;
+                    }
+    
+                    .lineAdd {
+                        width: 1px;
+                        height: 70px;
+                        background: linear-gradient(180deg, #FFF, var(--grey), #FFF);
+                    }
+    
+                    .ussrAdd {
+                        width: 80%;
+                    }
+                }
+            }
+    
+            .coProduct {
+                width: 100%;
+                background-color: var(--white);
+                padding: 20px;
+    
+                .prodTitle {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+    
+                    h2 {
+                        width: 60%;
+                    }
+
+                    .ptList {
+                        width: 40%;
+                        display: flex;
+                        justify-content: center;
+
+                        p {
+                            width: 30%;
+                            text-align: center;
+                        }
+        
+                        h3 {
+                            width: 50%;
+                            text-align: right;
+                        }
+                    }
+                }
+    
+                .prodStore {
+                    width: 100%;
+                    margin-bottom: 10px;
+    
+                    h3 {
+                        margin-left: 20px;
+                    }
+                }
+    
+                .prodProduct {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+    
+                    .imgInfo {
+                        width: 60%;
+                        display: flex;
+    
+                        img {
+                            width: 150px;
+                            height: 150px;
+                            object-fit: cover;
+                            margin-right: 20px;
+                        }
+    
+                        p {
+                            width: 100%;
+                            text-align: left;
+                            align-self: center;
+                        }
+                    }
+
+                    .priceInfo {
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+
+                        p {
+                            width: 30%;
+                            text-align: center;
+                        }
+        
+                        h3 {
+                            width: 50%;
+                            text-align: right;
+                        }
+                    }
+    
+                }
+    
+                .prodTotal {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+    
+                    p {
+                        margin-right: 50px;
+                    }
+                }
+            }
+    
+            .coPayment {
+                width: 100%;
+                background-color: var(--white);
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                .payTitle {
+                    width: 100%;
+                }
+    
+                .linePayment {
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--grey), rgba(255, 255, 255, 0));
+                }
+    
+                .payInfo {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 100px;
+    
+                    .paySTR, .payINT {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+    
+                    .paySTR {
+                        .TTL {
+                            font-size: 1.5rem;
+                            align-self: center;
+                        }
+                    }
+    
+                    .payINT {
+                        text-align: right;
+    
+                        h3 {
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+    
+                .line2Payment {
+                    width: 100%;
+                    border-top: 1px dashed var(--grey);
+                }
+    
+                .payButton {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+    
+                    button {
+                        padding: 10px;
+                        width: 250px;
+                        font-family: 'Numans';
+                        background-color: var(--red);
+                        color: var(--white);
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s;
+    
+                        &:hover {
+                            background-color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .coContainer {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .coTitle {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            h1 {
+                color: var(--white);
+                font-size: 1.5rem;
+            }
+    
+            .lineCheck {
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--white), rgba(255, 255, 255, 0));
+            }
+        }
+
+        .coSection {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .coAddress {
+                width: 100%;
+                background-color: var(--white);
+                padding: 10px;
+                gap: 5px;
+    
+                .addTitle {
+                    width: 100%;
+                    color: var(--red);
+                    display: flex;
+                    font-size: 3vw;
+                }
+    
+                .addInfo {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 5px;
+
+                    .ussrName {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-evenly;
+                        font-size: 4vw;
+                    }
+    
+                    .lineAdd {
+                        width: 100%;
+                        height: 1px;
+                        background: linear-gradient(180deg, #FFF, var(--grey), #FFF);
+                    }
+    
+                    .ussrAdd {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .coProduct {
+                width: 100%;
+                background-color: var(--white);
+                padding: 10px;
+                gap: 10px;
+    
+                .prodTitle {
+                    display: none;
+                }
+    
+                .prodStore {
+                    width: 100%;
+    
+                    h3 {
+                        padding: 0 20px;
+                    }
+                }
+    
+                .prodProduct {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+    
+                    .imgInfo {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+    
+                        img {
+                            width: 70px;
+                            height: 70px;
+                            object-fit: cover;
+                        }
+    
+                        p {
+                            width: 100%;
+                            text-align: left;
+                            align-self: center;
+                        }
+                    }
+
+                    .priceInfo {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        font-size: 3vw;
+
+                        p {
+                            width: 30%;
+                            text-align: center;
+                        }
+        
+                        h3 {
+                            width: 40%;
+                            text-align: right;
+                        }
+                    }
+    
+                }
+    
+                .prodTotal {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 3.5vw;
+                }
+            }
+
+            .coPayment {
+                width: 100%;
+                background-color: var(--white);
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                .payTitle {
+                    width: 100%;
+                    font-size: 3vw;
+                }
+    
+                .linePayment {
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--grey), rgba(255, 255, 255, 0));
+                }
+    
+                .payInfo {
+                    width: 100%;
+                    display: flex;
+    
+                    .paySTR, .payINT {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        font-size: 4vw;
+                    }
+    
+                    .paySTR {
+                        .TTL {
+                            font-size: 5vw;
+                        }
+                    }
+    
+                    .payINT {
+                        text-align: right;
+    
+                        h3 {
+                            font-size: 5vw;
+                        }
+                    }
+                }
+    
+                .line2Payment {
+                    width: 100%;
+                    border-top: 1px dashed var(--grey);
+                }
+    
+                .payButton {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+    
+                    button {
+                        padding: 10px;
+                        width: 100%;
+                        font-family: 'Numans';
+                        background-color: var(--red);
+                        color: var(--white);
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s;
+    
+                        &:hover {
+                            background-color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

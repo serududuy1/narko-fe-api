@@ -1,0 +1,248 @@
+@media only screen and (min-width: 568px) {
+    .menuHis {
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .histoCard {
+        width: 100%;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+
+        .hisToko {
+            width: 100%;
+            padding: 10px 30px;
+            font-size: 1vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+                width: 80%;
+            }
+
+            .done {
+                background-color: green;
+                color: var(--white);
+                border-radius: 5px;
+                padding: 0 5px;
+                width: 20%;
+                text-align: center;
+            }
+
+            .undone {
+                background-color: var(--red);
+                color: var(--white);
+                border-radius: 5px;
+                padding: 0 5px;
+                width: 20%;
+                text-align: center;
+            }
+        }
+
+        .hisLine {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--black), rgba(255, 255, 255, 0));
+        }
+    
+        .hisProduct {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+    
+            .hisMb {
+                width: 70%;
+                height: 120px;
+                display: flex;
+                gap: 10px;
+                
+                .hisImg {
+                    width: 120px;
+                    height: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        object-fit: cover;
+                    }
+                }
+        
+                .hisInfo {
+                    width: 70%;
+                    font-size: 1.2vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: stretch;
+
+                    h4 {
+                        height: 30%;
+                        overflow: auto;
+                    }
+
+                    p {
+                        height: 30%;
+                        overflow: auto;
+                    }
+                }
+            }
+    
+            .hisPrice {
+                width: 30%;
+                color: var(--red);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.6vw;
+            }
+        }
+    
+        .hisTotal {
+            width: 100%;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+
+            .pay {
+                width: 20%;
+                font-size: 1vw;
+                font-family: 'Poppins';
+                background-color: var(--black);
+                border: none;
+                border-radius: 5px;
+                color: var(--white);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--pink);
+                }
+            }
+    
+            span {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 10px;
+    
+                h2 {
+                    color: var(--red);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .menuHis {
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .histoCard {
+        width: 100%;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+
+        .hisToko {
+            width: 100%;
+            padding: 5px;
+            font-size: 2vw;
+        }
+
+        .hisLine {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--black), rgba(255, 255, 255, 0));
+        }
+
+        .hisProduct {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+    
+            .hisMb {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                
+                .hisImg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+        
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        object-fit: cover;
+                    }
+                }
+        
+                .hisInfo {
+                    width: 70%;
+                    height: 100%;
+                    font-size: .7rem;
+
+                    h4 {
+                        overflow: auto;
+                        text-align: left;
+                        text-overflow: clip;
+
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .hisPrice {
+                color: var(--red);
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: .7rem;
+            }
+        }
+
+        .hisTotal {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            span {
+                width: 100%;
+                font-size: .7rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                h2 {
+                    color: var(--red);
+                }
+            }
+        }
+    }
+}

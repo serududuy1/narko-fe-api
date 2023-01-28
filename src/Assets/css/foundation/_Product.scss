@@ -1,0 +1,62 @@
+@media only screen and (min-width: 568px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 50px 0;
+    }
+
+    .proContainer {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+        .proTitle {
+            padding: 10px 20px;
+            color: var(--white);
+        }
+    }
+    
+    .proLine {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 20px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--white), rgba(255, 255, 255, 0));
+        // background-color: var(--white);
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .proContainer {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+        .proTitle {
+            color: var(--white);
+            font-size: .6rem;
+        }
+
+        .proLine {
+            width: 100%;
+            height: 1px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--white), rgba(255, 255, 255, 0));
+            // background-color: var(--white);
+        }
+    }
+
+}

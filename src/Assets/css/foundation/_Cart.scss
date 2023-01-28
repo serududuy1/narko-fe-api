@@ -1,0 +1,352 @@
+@media only screen and (min-width: 568px) {
+    .iconSwal {
+        border-color: var(--red);
+    }
+    
+    .cartContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        margin: 30px 0;
+    
+        .cartTitle {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            h1 {
+                color: var(--white);
+                font-size: 3rem;
+            }   
+            
+            .lineCart {
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0), #FFF, rgba(255, 255, 255, 0));
+            }
+        }
+    
+        .cartSection {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+    
+            .cartCard {
+                width: 100%;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: column;
+                filter: drop-shadow(0 0 10px var(--black));
+                border-radius: 2px;
+    
+                .cartProductMenu {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    padding: 30px;
+                    justify-content: space-between;
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    
+                    .productInfo {
+                        display: flex;
+                        gap: 10px;
+                        width: 50%;
+                        
+                        .productImage {
+                            width: 150px;
+                            height: 150px;
+                            overflow: hidden;
+    
+                            img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+    
+                        .productName {
+                            width: 65%;
+                            display: flex;
+                            text-align: left;
+
+                            h2 {
+                                overflow: auto;
+                                height: 150px;
+                                font-size: 1.2vw;
+                            }
+                        }
+                    }
+    
+                    .productMenuList {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        text-align: center;
+    
+                        .PML1, .PML2 {
+                            width: 50%;
+                            display: flex;
+                            justify-content: center;
+
+                            .menuList {
+                                width: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                justify-content: center;
+        
+                                p {
+                                    font-size: 1vw;
+                                    font-weight: bold;
+                                    color: var(--red);
+                                }
+        
+                                input {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    text-align: center;
+                                    font-size: 1.5rem;
+                                    font-family: 'Numans';
+                                    background: transparent;
+                                    border: none;
+                      
+                                    &[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+                                        display: none;
+                                        appearance: none;
+                                        margin: 0;
+                                    }
+                                }
+        
+                                button {
+                                    cursor: pointer;
+                                    background: transparent;
+                                    border: none;
+                                    font-weight: bold;
+                                    font-family: 'Poppins';
+                                    font-size: 1.2rem;
+                                    transition: all .2s;
+        
+                                    &:hover {
+                                        color: var(--pink);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .co {
+                width: 50%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                font-size: 1.5rem;
+                font-family: 'Poppins';
+                font-weight: bold;
+                cursor: pointer;
+                background-color: var(--black);
+                border: none;
+                color: var(--white);
+                transition: all .2s;
+    
+                &:hover {
+                    background-color: var(--pink);
+                    filter: drop-shadow(0 0 2px var(--black));
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .iconSwal {
+        border-color: var(--red);
+    }
+
+    .cartContainer {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .cartTitle {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            h1 {
+                color: var(--white);
+                font-size: 1.5rem;
+            }   
+            
+            .lineCart {
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0), #FFF, rgba(255, 255, 255, 0));
+            }
+        }
+
+        .cartSection {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+    
+            .cartCard {
+                width: 100%;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: column;
+                filter: drop-shadow(0 0 10px var(--black));
+                border-radius: 2px;
+    
+                .cartProductMenu {
+                    width: 100%;
+                    display: flex;
+                    padding: 10px;
+                    flex-direction: column;
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+                    gap: 10px;
+    
+                    .productInfo {
+                        display: flex;
+                        gap: 10px;
+                        
+                        .productImage {
+                            width: 50px;
+                            height: 50px;
+    
+                            img {
+                                object-fit: cover;
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+    
+                        .productName {
+                            font-size: .7rem;
+                            width: 100%;
+                            display: flex;
+                            text-align: left;
+
+                            h2 {
+                                height: 50px;
+                                overflow: auto;
+                            }
+                        }
+                    }
+    
+                    .productMenuList {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 5px;
+    
+                        .PML1, .PML2 {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        .linePML {
+                            width: 100%;
+                            height: 1px;
+                            background-color: var(--grey);
+                        }
+
+                        .PML2 {
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 10px;
+                        }
+    
+                        .menuList {
+                            width: 100%;
+    
+                            p {
+                                font-weight: bold;
+                                color: var(--red);
+                            }
+    
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                text-align: center;
+                                font-size: 1.5rem;
+                                font-family: 'Numans';
+                                background: transparent;
+                                border: none;
+                  
+                                &[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+                                    display: none;
+                                    appearance: none;
+                                    margin: 0;
+                                }
+                            }
+    
+                            button {
+                                cursor: pointer;
+                                background: transparent;
+                                border: none;
+                                font-weight: bold;
+                                font-family: 'Poppins';
+                                font-size: 1.2rem;
+                                transition: all .2s;
+                                color: var(--black);
+    
+                                &:hover {
+                                    color: var(--pink);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .co {
+                width: 80%;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                font-size: 1rem;
+                font-family: 'Poppins';
+                font-weight: bold;
+                cursor: pointer;
+                background-color: var(--black);
+                border: none;
+                color: var(--white);
+                transition: all .2s;
+    
+                &:hover {
+                    background-color: var(--pink);
+                    filter: drop-shadow(0 0 2px var(--black));
+                }
+            }
+        }
+    }
+}

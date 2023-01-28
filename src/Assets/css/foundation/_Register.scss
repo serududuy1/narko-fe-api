@@ -1,0 +1,209 @@
+@media only screen and (min-width: 568px) {
+    .reg-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        .logter {
+            &:hover {
+                filter: drop-shadow(0 0 5px var(--grey));
+            }
+        }
+    
+        .reg-section {
+            width: 25%;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+    
+            .reg-title {
+                width: 100%;
+                text-align: left;
+                margin-bottom: 50px;
+            }
+    
+            form {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+    
+                input {
+                    height: 40px;
+                    padding: 10px;
+                    font-family: 'Numans';
+                    font-size: 1.2rem;
+                }
+    
+                .shwPW {
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    
+                    input {
+                        accent-color: var(--red);
+                        width: 15px;
+                    }
+                }
+    
+                .btn-reg {
+                    margin-top: 20px;
+                    background: linear-gradient(to bottom, var(--pink), var(--red));
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    border-radius: 5px;
+                    color: var(--white);
+                    line-height: 2.5;
+                    font-size: 1rem;
+                    font-family: 'Poppins';
+                    cursor: pointer;
+    
+                    &:hover {
+                        background: linear-gradient(to bottom, var(--red), var(--pink));
+                    }
+                }
+            }
+    
+            .line {
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(90deg, var(--white), var(--grey), var(--white));
+                margin: 20px 0;
+            }
+    
+            .lk-login {
+                margin: auto;
+                width: 65%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .to-login {
+                    color: var(--red);
+    
+                    &:hover {
+                        text-shadow: 0 0 2px var(--pink);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .reg-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .logter {
+            &:hover {
+                filter: drop-shadow(0 0 5px var(--grey));
+            }
+        }
+
+        .reg-section {
+            width: 90%;
+            padding: 20px;
+            background-color: var(--white);
+            gap: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+    
+            .reg-title {
+                width: 100%;
+            }
+    
+            form {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 3px;
+
+                label {
+                    font-size: 1rem;
+                }
+    
+                input {
+                    height: 30px;
+                    padding: 5px;
+                    font-family: 'Numans';
+                    font-size: .9rem;
+                }
+    
+                .shwPW {
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: .9rem;
+                    
+                    input {
+                        accent-color: var(--red);
+                        width: 13px;
+                    }
+                }
+    
+                .btn-reg {
+                    background: linear-gradient(to bottom, var(--pink), var(--red));
+                    width: 100%;
+                    height: 30px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    border-radius: 5px;
+                    color: var(--white);
+                    font-size: .9rem;
+                    font-family: 'Poppins';
+                    cursor: pointer;
+    
+                    &:hover {
+                        background: linear-gradient(to bottom, var(--red), var(--pink));
+                    }
+                }
+
+                .reg-footer {
+                    font-size: .8rem;
+                }
+            }
+    
+            .line {
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(90deg, var(--white), var(--grey), var(--white));
+                margin: 5px 0;
+            }
+    
+            .lk-login {
+                margin: auto;
+                width: 100%;
+                display: flex;
+                font-size: .9rem;
+                justify-content: center;
+                gap: 10px;
+                align-items: center;
+    
+                .to-login {
+                    color: var(--red);
+    
+                    &:hover {
+                        text-shadow: 0 0 2px var(--pink);
+                    }
+                }
+            }
+        }
+    }
+}

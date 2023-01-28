@@ -1,0 +1,86 @@
+@media only screen and (min-width: 568px) {
+    .nfContainer {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .nfImage {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+    
+            img {
+                width: 40%;
+            }
+    
+            h1 {
+                font-size: 4rem;
+                color: var(--white);
+            }
+        }
+    
+        .nfHomepage {
+            font-size: 2rem;
+            font-family: 'Poppins';
+            color: var(--black);
+            transition: all .2s;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+    
+            &:hover {
+                filter: drop-shadow(0 0 3px var(--white));
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .nfContainer {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .nfImage {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                width: 60%;
+            }
+    
+            h1 {
+                font-size: 1rem;
+                color: var(--white);
+                text-align: center;
+            }
+        }
+    
+        .nfHomepage {
+            font-size: 2rem;
+            font-family: 'Poppins';
+            color: var(--black);
+            transition: all .2s;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+    
+            &:hover {
+                filter: drop-shadow(0 0 3px var(--white));
+            }
+        }
+    }
+}
