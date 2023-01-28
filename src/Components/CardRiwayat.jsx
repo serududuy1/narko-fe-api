@@ -30,7 +30,7 @@ const CardRiwayat = (props) => {
     }).format(number);
   };
   const datastatus = props.data.statusTransaksi;
-  const url = "http:\\\\narko-be-production.up.railway.app/\\";
+  const url = "http:\\\\narko-be-production.up.railway.app\\";
 
   const payBtn = () => {
     if (saldo < totalHarga) {

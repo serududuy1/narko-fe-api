@@ -21,7 +21,7 @@ const HeaderSeller = () => {
         <img src={NSLR} alt="Logo Seller" />
         <div>
           <Link className="hdsProfile" to="/profile">
-            <img src={"http://narko-be-production.up.railway.app//" + ssdd} />
+            <img src={"http://narko-be-production.up.railway.app/" + ssdd} />
             <p>Toko {auth?.name}</p>
           </Link>
         </div>

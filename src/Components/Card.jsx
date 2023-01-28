@@ -8,7 +8,7 @@ const Card = (props) => {
     }).format(number);
   };
 
-  const url = "http:\\\\narko-be-production.up.railway.app/\\";
+  const url = "http:\\\\narko-be-production.up.railway.app\\";
   return (
     <Link className="detail" to={`/detailProduk/search?id=${props.id}`}>
       <div className="card">
