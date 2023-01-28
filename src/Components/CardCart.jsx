@@ -42,7 +42,7 @@ const CardCart = (props) => {
     });
   };
 
-  const url = "http:\\\\localhost:8000\\";
+  const url = "http:\\\\https://narko-be-production.up.railway.app/\\";
   return (
     <>
       <div className="cartCard">

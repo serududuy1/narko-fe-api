@@ -61,7 +61,12 @@ const Profile = () => {
         <div className="sidebar">
           <div className="csx">
             <div className="profile-pict">
-              <img src={"http://localhost:8000/" + ssdd} alt="Profile" />
+              <img
+                src={
+                  "http://https://narko-be-production.up.railway.app//" + ssdd
+                }
+                alt="Profile"
+              />
               <p>{users?.username}</p>
             </div>
             <div className="saldo-sec">

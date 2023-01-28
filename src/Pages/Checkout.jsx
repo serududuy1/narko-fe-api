@@ -103,7 +103,7 @@ const Checkout = () => {
     //   })
   };
   var totalHarga = 0;
-  const url = "http:\\\\localhost:8000\\";
+  const url = "http:\\\\https://narko-be-production.up.railway.app/\\";
   return (
     <>
       {" "}

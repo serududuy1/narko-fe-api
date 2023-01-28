@@ -138,7 +138,7 @@ const DetailProduk = () => {
     });
   };
 
-  const url = "http:\\\\localhost:8000\\";
+  const url = "http:\\\\https://narko-be-production.up.railway.app/\\";
 
   useEffect(() => {
     setIds(sellerId);

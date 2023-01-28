@@ -80,7 +80,11 @@ const Header = () => {
                 <p className="cart">Cart</p>
               </Link>
               <Link className="icon account" to="/profile">
-                <img src={"http://localhost:8000/" + ssdd} />
+                <img
+                  src={
+                    "http://https://narko-be-production.up.railway.app//" + ssdd
+                  }
+                />
                 <p className="btn-login">{users?.username}</p>
               </Link>
             </div>

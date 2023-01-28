@@ -7,8 +7,8 @@ const Card = (props) => {
       currency: "IDR",
     }).format(number);
   };
-  
-  const url = "http:\\\\localhost:8000\\";
+
+  const url = "http:\\\\https://narko-be-production.up.railway.app/\\";
   return (
     <Link className="detail" to={`/detailProduk/search?id=${props.id}`}>
       <div className="card">
